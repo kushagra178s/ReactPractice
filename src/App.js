@@ -6,8 +6,9 @@ import ConstactList from './components/ContactList';
 import { useState } from 'react';
 export default function App() {
   const [contacts, setContacts] = useState([]);
+  const Contacts = []
   return (
-    <div className="Container">
+    <div className='ui Container' style={{'margin':'10px'}}>
       <Header/>
       <AddContact/>
       <ConstactList contacts = {contacts} />
